@@ -13,3 +13,6 @@
 训练PixelCNN模型
 ## 第四阶段
 测试基于PixelCNN和VQVAE模型的生成能力
+
+# 参考
+[VQVAE PyTorch 实现教程](https://zhuanlan.zhihu.com/p/640000410)
