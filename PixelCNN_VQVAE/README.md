@@ -1,8 +1,8 @@
 # 下载数据
-从[Kaggle](https://www.kaggle.com/datasets/badasstechie/celebahq-resized-256x256)中下载训练数据集（约297MB）
-
+从[Kaggle](https://www.kaggle.com/datasets/badasstechie/celebahq-resized-256x256)中下载训练数据集（约297MB），并放到下面的文件夹中
+```mkdir ./data/celebA/```
 # 训练命令
-使用配置4和显卡0进行训练：```python main.py -c 4 -d 0```
+使用配置4和显卡0进行训练：```python main.py -c 3 -d 0```
 
 # 训练过程
 ## 第一阶段
