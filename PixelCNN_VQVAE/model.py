@@ -33,24 +33,21 @@ class VQVAE(nn.Module):
 
     def forward(self, x):
         # encode
-        ze = self.encoder(x)
-
-        # ze: [N, C, H, W]
-        # embedding [K, C]
-        embedding = self.vq_embedding.weight.data
+        ze = self.encoder(x) # x.shape: B C(3) H(64) W(64) ze.shape: B C(128) H(16) W(16)
+        embedding = self.vq_embedding.weight.data # embedding.shape: K(32) C(128)
         N, C, H, W = ze.shape
         K, _ = embedding.shape
-        embedding_broadcast = embedding.reshape(1, K, C, 1, 1)
-        ze_broadcast = ze.reshape(N, 1, C, H, W)
-        distance = torch.sum((embedding_broadcast - ze_broadcast)**2, 2)
-        nearest_neighbor = torch.argmin(distance, 1)
+        embedding_broadcast = embedding.reshape(1, K, C, 1, 1) # 1 K C 1 1
+        ze_broadcast = ze.reshape(N, 1, C, H, W) # B 1 C H W
+        distance = torch.sum((embedding_broadcast - ze_broadcast)**2, 2) # 基于通道维度C计算距离 
+        nearest_neighbor = torch.argmin(distance, 1) # 取距离最近的embedding nearest_neighbor.shape: B H W
         # make C to the second dim
-        zq = self.vq_embedding(nearest_neighbor).permute(0, 3, 1, 2)
+        zq = self.vq_embedding(nearest_neighbor).permute(0, 3, 1, 2) # 获取最近的embedding作为zq zq.shape B C(128) H W
         # stop gradient
-        decoder_input = ze + (zq - ze).detach()
+        decoder_input = ze + (zq - ze).detach() # trick
 
         # decode
-        x_hat = self.decoder(decoder_input)
+        x_hat = self.decoder(decoder_input) # 重构图像
         return x_hat, ze, zq
 
     @torch.no_grad() # 不计算梯度，当训练pixelcnn时调用
