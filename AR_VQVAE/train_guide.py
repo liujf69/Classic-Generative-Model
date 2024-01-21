@@ -172,8 +172,8 @@ class ModelTrainer:
                 total_perplexity.append(np.exp(loss.item()))
                 total_acc.append(acc.item())
 
-            print("testing epoch ", epoch_idx)
-            print("Autoregressive Token ce_loss: ", np.mean(total_celoss), "\tl2_loss: ", np.mean(total_l2loss),
+        print("testing epoch ", epoch_idx)
+        print("Autoregressive Token ce_loss: ", np.mean(total_celoss), "\tl2_loss: ", np.mean(total_l2loss),
                     "\tperplexity: ", np.mean(total_perplexity), "\tacc: ", np.mean(total_acc))
 
     def run(self):
