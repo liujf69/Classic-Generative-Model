@@ -24,8 +24,8 @@ def transform(examples):
 
 def process_dataset(batch_size):
     # 加载数据集
-    dataset = load_dataset("huggan/smithsonian_butterflies_subset", split = "train")
-    # dataset = load_dataset("/data-home/liujinfu/Diffuser/Data/smithsonian_butterflies_subset", split = "train")
+    # dataset = load_dataset("huggan/smithsonian_butterflies_subset", split = "train")
+    dataset = load_dataset("/data-home/liujinfu/Diffuser/Data/smithsonian_butterflies_subset", split = "train")
     # 调用自定义的transform函数
     dataset.set_transform(transform)
     # 设置dataloader
@@ -60,7 +60,7 @@ def train_loop(train_dataloader, noise_scheduler, model, num_epoches, device):
             noise_pred = model(noisy_images, timesteps, return_dict=False)[0]
 
             # Calculate the loss
-            loss = F.mse_loss(noise_pred, noise)
+            loss = F.mse_loss(noise_pred, noise) # 计算预测噪音和真实噪音之间的损失
             loss.backward(loss)
             losses.append(loss.item())
 
@@ -90,7 +90,7 @@ def generate(model, noise_scheduler):
     image_pipe = DDPMPipeline(unet = model, scheduler = noise_scheduler)
 
     pipeline_output = image_pipe()
-    pipeline_output.images[0]
+    return pipeline_output.images[0]
 
 # 可视化生成图像
 def show_images(x):
@@ -149,6 +149,10 @@ def main():
     fig = vis(losses)
     fig.savefig("./loss.png")
     
+    # 生成一张图片
+    gen_img = generate(model, noise_scheduler)
+    gen_img.save("./generate1.png")
+    
     # 随机初始化噪音生成图片
     sample = torch.randn(8, 3, 32, 32).to(device)
     for i, t in enumerate(noise_scheduler.timesteps): # 反向去噪
@@ -160,7 +164,7 @@ def main():
     
     # 可视化生成的图片
     grid_im = show_images(sample)
-    grid_im.save("./genearate.png")
+    grid_im.save("./genearate2.png")
     print("All Done!")
 
 if __name__ == "__main__":
