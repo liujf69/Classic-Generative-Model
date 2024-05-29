@@ -9,3 +9,4 @@
 8. A simple demo about **Calculating Motion FID** in the ``Cal_Motion_FID`` folder.
 9. A simple demo about **Conditional Diffusion Using Classifier-Free Diffusion Guidance** in the ``Cond_diffusion_Free_guide`` folder.
 10. A simple demo about **Using Diffuser** in the ``Diffuser_pipeline`` folder.
+11. A simple demo about **Using LoRA based on the PEFT** in the ``PEFT_LoRA`` folder.
