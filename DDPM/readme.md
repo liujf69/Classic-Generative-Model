@@ -44,7 +44,7 @@ loss = mse(eta_theta, eta)
 
 ## 生成过程
 通过以下公式实现图片生成:
-$$x_{t-1}=\frac{1}{\sqrt{a}}\*(x_{t}-\frac{1-a_{t}}{\sqrt{1-\bar{a_{t}}}}\*\epsilon_{0})+\sigma z$$
+$$x_{t-1}=\frac{1}{\sqrt{a_{t}}}\*(x_{t}-\frac{1-a_{t}}{\sqrt{1-\bar{a_{t}}}}\*\epsilon_{0})+\sigma z$$
 
 ```python
 x = torch.randn(n_samples, c, h, w).to(device) # 随机初始化噪声
