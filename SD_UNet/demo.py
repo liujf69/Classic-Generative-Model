@@ -17,6 +17,7 @@ def main():
     use_checkpoint = True
     legacy = False
 
+    # init UNet Model
     model = UNetModel(
         image_size = image_size,
         in_channels = in_channels,
@@ -33,17 +34,20 @@ def main():
         legacy = legacy
     ).cuda()
 
+    # generate test data
     shape = [3, 4, 64, 64]
     device = "cuda"
     x = torch.randn(shape, device=device)
     t = torch.tensor([981, 981, 981]).cuda()
     c = torch.ones(3, 77, 768).cuda()
-    uc = torch.zeros(3, 77, 768).cuda()
+    uc = torch.zeros(3, 77, 768).cuda() # Classifier-Free Diffusion Guidance
 
     x_in = torch.cat([x] * 2) # [3, 4, 64, 64] -> [6, 4, 64, 64]
     t_in = torch.cat([t] * 2) # [3] -> [6]
     c_in = torch.cat([uc, c]) # [3, 77, 768] -> [6, 77, 768]
-    e_t_uncond, e_t = model(x_in, t_in, c_in).chunk(2) # using Unet # [3, 4, 64, 64]
+    
+    # using Unet
+    e_t_uncond, e_t = model(x_in, t_in, c_in).chunk(2) # [3, 4, 64, 64]
 
     print("All Done!")
 
