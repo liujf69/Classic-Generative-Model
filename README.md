@@ -1,7 +1,8 @@
 # Classic-Generative-Model
 # Introduction
-本项目旨在以简洁 Demo 代码的方式实现经典的AIGC生成模型，避免下载复杂的数据集和需使用高端GPU的问题。<br />
-通过直达模型的核心代码（配合论文阅读更佳！），学习模型的核心思想，达到快速入门学习的目的。<br />
+1. 本项目旨在以简洁 Demo 代码的方式实现经典的AIGC生成模型，避免下载复杂的数据集和需使用高端GPU的问题。
+2. 通过直达模型的核心代码（配合论文阅读更佳！），学习模型的核心思想，达到快速入门学习的目的。
+3. 以下均为个人小白转行入门 AIGC 所阅读和编写的代码，欢迎指出问题和 Pull Request（PR）。
 
 # Contents
 1. A simple demo about **DDPM** in the [DDPM](https://github.com/liujf69/Classic-Generative-Model/tree/main/DDPM) folder.
