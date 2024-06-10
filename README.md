@@ -1,4 +1,9 @@
 # Classic-Generative-Model
+# Introduction
+本项目旨在以简洁 Demo 代码的方式实现经典的AIGC生成模型，避免下载复杂的数据集和需使用高端GPU的问题。<br />
+通过直达模型的核心代码（配合论文阅读更佳！），学习模型的核心思想，达到快速入门学习的目的。<br />
+
+# Contents
 1. A simple demo about **DDPM** in the ``DDPM`` folder.
 2. A simple demo about **GAN** in the ``GAN`` folder.
 3. A simple demo about **VAE** in the ``VAE`` folder.
