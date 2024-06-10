@@ -12,7 +12,7 @@
 11. A simple demo about **Using LoRA based on the PEFT** in the ``PEFT_LoRA`` folder.
 12. A simple demo about **MoE Model** in the ``Simple_MoE`` folder.
 13. A simple demo about **DDIM Model** in the ``Simple_DDIM`` folder.
-14. A simple demo about **UNet of Stable Diffusion** in the ``SD_UNet`` folder.
+14. A simple demo about **UNet Model of Stable Diffusion** in the ``SD_UNet`` folder.
 
 # Contact
 For any questions, feel free to contact: ```liujf69@mail2.sysu.edu.cn```
