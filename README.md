@@ -57,5 +57,3 @@
 # Thanks
 Thanks to all the authors of the above blogs and papers!
 
-# Contact
-For any questions, feel free to contact: ```liujf69@mail2.sysu.edu.cn```
