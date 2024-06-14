@@ -55,6 +55,12 @@
 - Scalable Diffusion Models with Transformers [[Paper]](https://arxiv.org/pdf/2212.09748) [[Code]](https://github.com/facebookresearch/DiT)
 - Hunyuan-DiT : A Powerful Multi-Resolution Diffusion Transformer with Fine-Grained Chinese Understanding [[Paper]](https://arxiv.org/pdf/2405.08748) [[Code]](https://github.com/Tencent/HunyuanDiT)
 
+# Project Recommendation
+- AnimateDiff [[Code]](https://github.com/guoyww/AnimateDiff)
+- Open-Sora [[Code]](https://github.com/hpcaitech/Open-Sora)
+- VAR [[Code]](https://github.com/FoundationVision/VAR)
+- IC-Light [[Code]](https://github.com/lllyasviel/IC-Light)
+  
 # Thanks
 Thanks to all the authors of the above blogs and papers!
 
