@@ -42,7 +42,7 @@
 - DENOISING DIFFUSION IMPLICIT MODELS [[Paper]](https://arxiv.org/pdf/2010.02502) [[Code]](https://github.com/ermongroup/ddim)
 - High-Resolution Image Synthesis with Latent Diffusion Models [[Paper]](https://arxiv.org/pdf/2112.10752) [[Code]](https://github.com/CompVis/latent-diffusion) [[Code]](https://github.com/CompVis/stable-diffusion)
 - Diffusion Models Beat GANs on Image Synthesis [[Paper]](https://arxiv.org/pdf/2105.05233) [[Code]](https://github.com/openai/guided-diffusion)
-- Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets [[Paper]](https://arxiv.org/pdf/2311.15127v1)
+- Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets [[Paper]](https://arxiv.org/pdf/2311.15127v1) [[Code]](https://github.com/Stability-AI/generative-models)
 
 ## GAN
 - Generative Adversarial Nets [[Paper]](https://arxiv.org/pdf/1406.2661) [[Code]](https://github.com/goodfeli/adversarial)
