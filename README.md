@@ -56,6 +56,7 @@
 - Hunyuan-DiT : A Powerful Multi-Resolution Diffusion Transformer with Fine-Grained Chinese Understanding [[Paper]](https://arxiv.org/pdf/2405.08748) [[Code]](https://github.com/Tencent/HunyuanDiT)
 
 # Project Recommendation
+- stable-diffusion [[Code]](https://github.com/CompVis/stable-diffusion)
 - AnimateDiff [[Code]](https://github.com/guoyww/AnimateDiff)
 - Open-Sora [[Code]](https://github.com/hpcaitech/Open-Sora)
 - VAR [[Code]](https://github.com/FoundationVision/VAR)
