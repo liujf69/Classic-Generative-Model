@@ -44,6 +44,9 @@
 - Diffusion Models Beat GANs on Image Synthesis [[Paper]](https://arxiv.org/pdf/2105.05233) [[Code]](https://github.com/openai/guided-diffusion)
 - Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets [[Paper]](https://arxiv.org/pdf/2311.15127v1) [[Code]](https://github.com/Stability-AI/generative-models)
 
+## Autoregressive Model
+- Autoregressive Image Generation without Vector Quantization [[Paper]](https://arxiv.org/pdf/2406.11838)
+
 ## GAN
 - Generative Adversarial Nets [[Paper]](https://arxiv.org/pdf/1406.2661) [[Code]](https://github.com/goodfeli/adversarial)
 
