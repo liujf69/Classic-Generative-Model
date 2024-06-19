@@ -36,6 +36,7 @@
 - [Stable Diffusion 原理介绍](https://zhuanlan.zhihu.com/p/613337342)
 - [一文读懂DDIM凭什么可以加速DDPM的采样效率](https://zhuanlan.zhihu.com/p/627616358)
 - [自回归图像生成代码阅读：VQ-GAN](https://zhuanlan.zhihu.com/p/703597240)
+- [详解VQGAN（一）| 结合离散化编码与Transformer的百万像素图像生成](https://zhuanlan.zhihu.com/p/515214329)
 
 # Paper Recommendation
 ## Diffusion
