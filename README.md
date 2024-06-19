@@ -50,10 +50,11 @@
 ## GAN
 - Generative Adversarial Nets [[Paper]](https://arxiv.org/pdf/1406.2661) [[Code]](https://github.com/goodfeli/adversarial)
 
-## VQVAE & VAE
+## VQVAE & VAE & VQ-GAN
 - Neural Discrete Representation Learning [[Paper]](https://arxiv.org/pdf/1711.00937)
 - Auto-Encoding Variational Bayes [[Paper]](https://arxiv.org/pdf/1312.6114)
 - CV-VAE: A Compatible Video VAE for Latent Generative Video Models [[Paper]](https://arxiv.org/pdf/2405.20279) [[Code]](https://github.com/AILab-CVC/CV-VAE?tab=readme-ov-file)
+- Taming Transformers for High-Resolution Image Synthesis [[Paper]](https://arxiv.org/pdf/2012.09841) [[Code]](https://github.com/CompVis/taming-transformers/tree/master)
 
 ## DIT
 - Scalable Diffusion Models with Transformers [[Paper]](https://arxiv.org/pdf/2212.09748) [[Code]](https://github.com/facebookresearch/DiT)
