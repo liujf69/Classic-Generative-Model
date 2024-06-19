@@ -35,6 +35,7 @@
 - [深入浅出完整解析ControlNet](https://zhuanlan.zhihu.com/p/660924126)
 - [Stable Diffusion 原理介绍](https://zhuanlan.zhihu.com/p/613337342)
 - [一文读懂DDIM凭什么可以加速DDPM的采样效率](https://zhuanlan.zhihu.com/p/627616358)
+- [自回归图像生成代码阅读：VQ-GAN](https://zhuanlan.zhihu.com/p/703597240)
 
 # Paper Recommendation
 ## Diffusion
