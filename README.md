@@ -39,6 +39,11 @@
 - [详解VQGAN（一）| 结合离散化编码与Transformer的百万像素图像生成](https://zhuanlan.zhihu.com/p/515214329)
 
 # Paper Recommendation
+## News and Highlights
+- Rich Human Feedback for Text-to-Image Generation [[Paper]](https://arxiv.org/pdf/2312.10240) [[Code]](https://github.com/google-research/google-research/tree/master/richhf_18k)
+- Generative Image Dynamics [[Paper]](https://generative-dynamics.github.io/static/pdfs/GenerativeImageDynamics.pdf) [[Project]](https://generative-dynamics.github.io/)
+
+
 ## Diffusion
 - Denoising Diffusion Probabilistic Models [[Paper]](https://arxiv.org/pdf/2006.11239) [[Code]](https://github.com/hojonathanho/diffusion)
 - DENOISING DIFFUSION IMPLICIT MODELS [[Paper]](https://arxiv.org/pdf/2010.02502) [[Code]](https://github.com/ermongroup/ddim)
