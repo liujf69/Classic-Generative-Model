@@ -73,6 +73,7 @@
 - Open-Sora [[Code]](https://github.com/hpcaitech/Open-Sora)
 - VAR [[Code]](https://github.com/FoundationVision/VAR)
 - IC-Light [[Code]](https://github.com/lllyasviel/IC-Light)
+- IC-Light [[IP-Adapter]](https://github.com/tencent-ailab/IP-Adapter)
   
 # Thanks
 Thanks to all the authors of the above blogs and papers!
