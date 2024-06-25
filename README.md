@@ -38,12 +38,12 @@
 - [自回归图像生成代码阅读：VQ-GAN](https://zhuanlan.zhihu.com/p/703597240)
 - [详解VQGAN（一）| 结合离散化编码与Transformer的百万像素图像生成](https://zhuanlan.zhihu.com/p/515214329)
 - [保持ID的人像生成技术介绍：IP-Adaptor,PhotoMaker,InstantID](https://zhuanlan.zhihu.com/p/678613724)
+- [Classifier Guidance 和 Classifier Free Guidance](https://zhuanlan.zhihu.com/p/660518657)
 
 # Paper Recommendation
 ## News and Highlights
 - Rich Human Feedback for Text-to-Image Generation (CVPR 2024 best paper) [[Paper]](https://arxiv.org/pdf/2312.10240) [[Code]](https://github.com/google-research/google-research/tree/master/richhf_18k)
 - Generative Image Dynamics (CVPR 2024 best paper) [[Paper]](https://generative-dynamics.github.io/static/pdfs/GenerativeImageDynamics.pdf) [[Project]](https://generative-dynamics.github.io/)
-
 
 ## Diffusion
 - Denoising Diffusion Probabilistic Models [[Paper]](https://arxiv.org/pdf/2006.11239) [[Code]](https://github.com/hojonathanho/diffusion)
