@@ -1,6 +1,6 @@
 # 基于PEFT库使用LORA进行FineTune
 ## 核心代码
-···python
+```python
     # 配置lora config
     model_lora_config = LoraConfig(
         r = 32, 
@@ -13,7 +13,7 @@
     # 两种方式生成对应的lora模型，调用后会更改原始的模型
     new_model1 = get_peft_model(origin_model, model_lora_config)
     new_model2 = LoraModel(origin_model, model_lora_config, "default")
-···
+```
 ## Run
 ```
 python main.py
