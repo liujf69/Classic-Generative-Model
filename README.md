@@ -67,6 +67,7 @@
 ## DIT
 - Scalable Diffusion Models with Transformers [[Paper]](https://arxiv.org/pdf/2212.09748) [[Code]](https://github.com/facebookresearch/DiT)
 - Hunyuan-DiT : A Powerful Multi-Resolution Diffusion Transformer with Fine-Grained Chinese Understanding [[Paper]](https://arxiv.org/pdf/2405.08748) [[Code]](https://github.com/Tencent/HunyuanDiT)
+- All are Worth Words: A ViT Backbone for Diffusion Models [[Paper]](https://arxiv.org/pdf/2209.12152) [[Code]](https://github.com/baofff/U-ViT)
 
 # Project Recommendation
 - stable-diffusion [[Code]](https://github.com/CompVis/stable-diffusion)
