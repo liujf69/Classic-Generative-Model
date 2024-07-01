@@ -74,6 +74,7 @@
 - stable-diffusion [[Code]](https://github.com/CompVis/stable-diffusion)
 - AnimateDiff [[Code]](https://github.com/guoyww/AnimateDiff)
 - Open-Sora [[Code]](https://github.com/hpcaitech/Open-Sora)
+- Open-Sora-Plan [[Code]](https://github.com/PKU-YuanGroup/Open-Sora-Plan)
 - VAR [[Code]](https://github.com/FoundationVision/VAR)
 - IC-Light [[Code]](https://github.com/lllyasviel/IC-Light)
 - IP-Adapter [[Code]](https://github.com/tencent-ailab/IP-Adapter)
