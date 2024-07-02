@@ -6,4 +6,7 @@ U-ViT的原论文：[All are Worth Words: A ViT Backbone for Diffusion Models](h
  ```python
  python Video_Demo1.py
  ```
-2. 
+2. **Image_Demo1.py** 展示了以图片格式作为输入时，U-ViT的官方实现:
+ ```python
+ python Image_Demo1.py
+ ```
