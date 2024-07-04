@@ -7,7 +7,7 @@ SD中DDIM的核心公式遵循论文[DENOISING DIFFUSION IMPLICIT MODELS](https:
 <img src="./Fig/fig1.png", width = 800/>
 </div>
 
-1. 基于$x_t$生成$x_{t-1}$的方法遵循上式，SD中的实现代码如下：
+1. 基于 $x_t$ 生成 $x_{t-1}$ 的方法遵循上式，SD中的实现代码如下：
 
 ```python
  # current prediction for x_0
@@ -26,14 +26,14 @@ x_prev = a_prev.sqrt() * pred_x0 + dir_xt + noise # 构成论文https://arxiv.or
 <img src="./Fig/fig2.png", width = 800/>
 </div>
 
-2. 生成$\sigma$的方法遵循上式，SD中的实现代码如下：
+2. 生成 $\sigma$ 的方法遵循上式，SD中的实现代码如下：
 
 ```python
 # according the the formula provided in https://arxiv.org/abs/2010.02502 论文中的公式16
 sigmas = eta * np.sqrt((1 - alphas_prev) / (1 - alphas) * (1 - alphas / alphas_prev))
 ```
 
-3. SD中生成$\alpha_t$和$\alpha_{t-1}$的代码如下：
+3. SD中生成 $\alpha_t$ 和 $\alpha_{t-1}$ 的代码如下：
 
 ```python
 alphas = alphacums[ddim_timesteps] # 由于alphacums来自DDPM，所以本质上还是调用了DDPM的alphas_cumprod，即[0.9983, 0.9804, ..., 0.0058]
@@ -50,14 +50,14 @@ alphas_cumprod = np.cumprod(alphas, axis=0) # 计算alphas_cumprod [0.99915, 0.9
 
 4. SD中还采用了Free Guidance的思想，实现代码如下：
 ```python
-        if unconditional_conditioning is None or unconditional_guidance_scale == 1.:
-            e_t = self.model.apply_model(x, t, c)
-        else:
-            x_in = torch.cat([x] * 2) # [3, 4, 64, 64] -> [6, 4, 64, 64]
-            t_in = torch.cat([t] * 2) # [3] -> [6]
-            c_in = torch.cat([unconditional_conditioning, c]) # [3, 77, 768] -> [6, 77, 768]
-            e_t_uncond, e_t = self.model.apply_model(x_in, t_in, c_in).chunk(2) # using Unet
-            e_t = e_t_uncond + unconditional_guidance_scale * (e_t - e_t_uncond) # free guidance
+if unconditional_conditioning is None or unconditional_guidance_scale == 1.:
+    e_t = self.model.apply_model(x, t, c)
+else:
+    x_in = torch.cat([x] * 2) # [3, 4, 64, 64] -> [6, 4, 64, 64]
+    t_in = torch.cat([t] * 2) # [3] -> [6]
+    c_in = torch.cat([unconditional_conditioning, c]) # [3, 77, 768] -> [6, 77, 768]
+    e_t_uncond, e_t = self.model.apply_model(x_in, t_in, c_in).chunk(2) # using Unet
+    e_t = e_t_uncond + unconditional_guidance_scale * (e_t - e_t_uncond) # free guidance
 ```
 
 # Run
