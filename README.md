@@ -41,6 +41,7 @@
 - [详解VQGAN（一）| 结合离散化编码与Transformer的百万像素图像生成](https://zhuanlan.zhihu.com/p/515214329)
 - [保持ID的人像生成技术介绍：IP-Adaptor,PhotoMaker,InstantID](https://zhuanlan.zhihu.com/p/678613724)
 - [Classifier Guidance 和 Classifier Free Guidance](https://zhuanlan.zhihu.com/p/660518657)
+- [SD和Sora们背后的关键技术！一文搞懂所有 VAE 模型（4个AE+12个VAE原理汇总）](https://mp.weixin.qq.com/s/HzwkwjfItLEE1nmkd1-THw)
 
 # Paper Recommendation
 ## News and Highlights
