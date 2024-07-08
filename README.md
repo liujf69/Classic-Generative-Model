@@ -82,5 +82,5 @@
 - IP-Adapter [[Code]](https://github.com/tencent-ailab/IP-Adapter)
   
 # Thanks
-Thanks to all the authors of the above blogs and papers!!!
+Thanks to all the authors of the above blogs and papers!!
 
