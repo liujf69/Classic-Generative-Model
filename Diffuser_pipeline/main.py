@@ -124,7 +124,7 @@ def main():
         in_channels = 3,
         out_channels = 3,
         layers_per_block = 2, # how many resnet layers to use per Unet block
-        block_out_channels = (64, 128,128, 256),
+        block_out_channels = (64, 128, 128, 256),
         down_block_types = (
             "DownBlock2D",
             "DownBlock2D",
