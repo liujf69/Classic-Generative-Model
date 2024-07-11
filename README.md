@@ -80,6 +80,7 @@
 - VAR [[Code]](https://github.com/FoundationVision/VAR)
 - IC-Light [[Code]](https://github.com/lllyasviel/IC-Light)
 - IP-Adapter [[Code]](https://github.com/tencent-ailab/IP-Adapter)
+- LivePortrait [[Code]](https://github.com/KwaiVGI/LivePortrait)
   
 # Thanks
 Thanks to all the authors of the above blogs and papers!!
