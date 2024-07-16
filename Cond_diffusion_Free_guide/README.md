@@ -47,5 +47,20 @@ $\hat{\epsilon}_{t} = (1+w)\psi(z_t, c) - w \psi(z_t).$
             )
 ```
 
+# 内容强调
+Classifier-Free Diffusion Guidance 需要让模型在训练中学会**有条件**和**无条件**输入的生成能力。  
+具体在代码中是通过随机**dropout**类别c来实现：
+```python
+# 将label转换为one hot vector
+c = nn.functional.one_hot(c, num_classes = self.n_classes).type(torch.float) # [batchsize, 10]
+
+# mask out context if context_mask == 1
+context_mask = context_mask[:, None] # context_mask为1的将会被dropout
+context_mask = context_mask.repeat(1, self.n_classes)
+context_mask = (-1 * (1 - context_mask)) # need to flip 0 <-> 1 # 原来context_mask为1的变为0
+c = c * context_mask # drop out 原context_mask为1的label # [batchsize, 10] # 由于上一步变为了0，因此需要dropout的vector变为全0，形成了无条件输入的情况。
+```
+上述demo是类别作为条件输入，对于文本条件输入的情况，只需要在加载数据集时**随机将文本条件置为空字符串**，即可形成无条件输入的情况，从而让模型在训练中接收**无条件输入**和**有条件输入**。
+
 # Thanks
 Our project is based on the [Conditional_Diffusion_MNIST](https://github.com/TeaPearce/Conditional_Diffusion_MNIST)
