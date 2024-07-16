@@ -45,6 +45,7 @@
 - [SD和Sora们背后的关键技术！一文搞懂所有 VAE 模型（4个AE+12个VAE原理汇总）](https://mp.weixin.qq.com/s/HzwkwjfItLEE1nmkd1-THw)
 - [AIGC专栏4——Stable Diffusion原理解析-inpaint修复图片为例](https://blog.csdn.net/weixin_44791964/article/details/131997973)
 - [AIGC-Stable Diffusion之Inpaint(图像修复)](https://zhuanlan.zhihu.com/p/681250295)
+- [[论文理解] Classifier-free diffusion guidance](https://sunlin-ai.github.io/2022/06/01/Classifier-Free-Diffusion.html)
   
 # Paper Recommendation
 ## News and Highlights
