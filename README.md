@@ -50,6 +50,7 @@
 - [Stable Video Diffusion 结构浅析与论文速览](https://zhuanlan.zhihu.com/p/693750402)
 - [Stable Video Diffusion 源码解读 (Diffusers 版)](https://zhuanlan.zhihu.com/p/701223363)
 - [AIGC-Stable Diffusion之VAE](https://zhuanlan.zhihu.com/p/679772356)
+- [深入浅出完整解析Stable Diffusion XL（SDXL）核心基础知识](https://zhuanlan.zhihu.com/p/643420260)
   
 # Paper Recommendation
 ## News and Highlights
