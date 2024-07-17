@@ -59,6 +59,7 @@
 - High-Resolution Image Synthesis with Latent Diffusion Models [[Paper]](https://arxiv.org/pdf/2112.10752) [[Code]](https://github.com/CompVis/latent-diffusion) [[Code]](https://github.com/CompVis/stable-diffusion)
 - Diffusion Models Beat GANs on Image Synthesis [[Paper]](https://arxiv.org/pdf/2105.05233) [[Code]](https://github.com/openai/guided-diffusion)
 - Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets [[Paper]](https://arxiv.org/pdf/2311.15127v1) [[Code]](https://github.com/Stability-AI/generative-models)
+- Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models [[Paper]](https://arxiv.org/pdf/2304.08818)
 
 ## Autoregressive Model
 - Autoregressive Image Generation without Vector Quantization [[Paper]](https://arxiv.org/pdf/2406.11838)
