@@ -48,6 +48,7 @@
 - [AIGC-Stable Diffusion之Inpaint(图像修复)](https://zhuanlan.zhihu.com/p/681250295)
 - [[论文理解] Classifier-free diffusion guidance](https://sunlin-ai.github.io/2022/06/01/Classifier-Free-Diffusion.html)
 - [Stable Video Diffusion 结构浅析与论文速览](https://zhuanlan.zhihu.com/p/693750402)
+- [Stable Video Diffusion 源码解读 (Diffusers 版)](https://zhuanlan.zhihu.com/p/701223363)
   
 # Paper Recommendation
 ## News and Highlights
