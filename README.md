@@ -92,6 +92,7 @@
 - IC-Light [[Code]](https://github.com/lllyasviel/IC-Light)
 - IP-Adapter [[Code]](https://github.com/tencent-ailab/IP-Adapter)
 - LivePortrait [[Code]](https://github.com/KwaiVGI/LivePortrait)
+- zero123 [[Code]](https://github.com/cvlab-columbia/zero123/tree/main)
   
 # Thanks
 Thanks to all the authors of the above blogs and papers!!
