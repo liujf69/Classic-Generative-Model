@@ -93,6 +93,7 @@
 - IP-Adapter [[Code]](https://github.com/tencent-ailab/IP-Adapter)
 - LivePortrait [[Code]](https://github.com/KwaiVGI/LivePortrait)
 - zero123 [[Code]](https://github.com/cvlab-columbia/zero123/tree/main)
+- VideoTetris [[Code]](https://github.com/YangLing0818/VideoTetris)
   
 # Thanks
 Thanks to all the authors of the above blogs and papers!!
