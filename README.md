@@ -57,7 +57,8 @@
 - Rich Human Feedback for Text-to-Image Generation (CVPR 2024 best paper) [[Paper]](https://arxiv.org/pdf/2312.10240) [[Code]](https://github.com/google-research/google-research/tree/master/richhf_18k)
 - Generative Image Dynamics (CVPR 2024 best paper) [[Paper]](https://generative-dynamics.github.io/static/pdfs/GenerativeImageDynamics.pdf) [[Project]](https://generative-dynamics.github.io/)
 - Scaling Rectified Flow Transformers for High-Resolution Image Synthesis (ICML 2024 best paper) [[Paper]](https://arxiv.org/pdf/2403.03206) [[Project]](https://huggingface.co/stabilityai/stable-diffusion-3-medium)
-
+- VideoPoet: A Large Language Model for Zero-Shot Video Generation (ICML 2024 best paper) [[Paper]](https://arxiv.org/pdf/2312.14125) [[Project]](https://sites.research.google/videopoet/)
+- Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution (ICML 2024 best paper) [[Paper]](https://arxiv.org/pdf/2310.16834)
 ## Diffusion
 - Denoising Diffusion Probabilistic Models [[Paper]](https://arxiv.org/pdf/2006.11239) [[Code]](https://github.com/hojonathanho/diffusion)
 - DENOISING DIFFUSION IMPLICIT MODELS [[Paper]](https://arxiv.org/pdf/2010.02502) [[Code]](https://github.com/ermongroup/ddim)
