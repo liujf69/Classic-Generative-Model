@@ -23,7 +23,8 @@
 15. A simple demo about **U-ViT Demo** in the [Simple_U-DiT](https://github.com/liujf69/Classic-Generative-Model/tree/main/Simple_U-ViT) folder.
 16. A simple demo about **DDIM of Stable Diffusion** in the [SD_DDIM](https://github.com/liujf69/Classic-Generative-Model/tree/main/SD_DDIM) folder.
 17. A simple demo about **Inpainting of Stable Diffusion** in the [SD_Inpainting](https://github.com/liujf69/Classic-Generative-Model/tree/main/SD_Inpainting) folder.
-17. A simple demo about **Classifer Guidance** in the [Simple_Classifer_Guide](https://github.com/liujf69/Classic-Generative-Model/tree/main/Simple_Classifer_Guide) folder.
+18. A simple demo about **Classifer Guidance** in the [Simple_Classifer_Guide](https://github.com/liujf69/Classic-Generative-Model/tree/main/Simple_Classifer_Guide) folder.
+19. A simple demo about **Diffusion Transformers** in the [Simple_DIT](https://github.com/liujf69/Classic-Generative-Model/tree/main/Simple_DIT) folder.
 
 # Blog Recommendation
 - [DDPM = 拆楼 + 建楼](https://spaces.ac.cn/archives/9119)
