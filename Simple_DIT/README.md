@@ -35,6 +35,8 @@ self.pos_embed.data.copy_(torch.from_numpy(pos_embed).float().unsqueeze(0))
 t = self.t_embedder(t)                   # (N, D)
 y = self.y_embedder(y, self.training)    # (N, D)
 c = t + y                                # (N, D)
+
+# 在DiT Block中会通过scale和shift的方法，基于条件c的特征来影响图片的特征，本质上类似于特征线性调制（FiLM）层。
 ```
 
 DiT Block的核心代码如下：
