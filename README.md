@@ -87,7 +87,7 @@
 - All are Worth Words: A ViT Backbone for Diffusion Models [[Paper]](https://arxiv.org/pdf/2209.12152) [[Code]](https://github.com/baofff/U-ViT)
 
 ## AI-generated image detection
-- A Single Simple Patch is All You Need for AI-generated Image Detection [[Paper]](https://arxiv.org/pdf/2402.01123) [[Blog]](https://zhuanlan.zhihu.com/p/681554797)
+- A Single Simple Patch is All You Need for AI-generated Image Detection [[Paper]](https://arxiv.org/pdf/2402.01123) [[Code]](https://github.com/bcmi/SSP-AI-Generated-Image-Detection) [[Blog]](https://zhuanlan.zhihu.com/p/681554797)
 
 # Project Recommendation
 - stable-diffusion [[Code]](https://github.com/CompVis/stable-diffusion)
