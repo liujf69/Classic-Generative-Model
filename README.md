@@ -88,6 +88,7 @@
 
 ## AI-generated image detection
 - A Single Simple Patch is All You Need for AI-generated Image Detection [[Paper]](https://arxiv.org/pdf/2402.01123) [[Code]](https://github.com/bcmi/SSP-AI-Generated-Image-Detection) [[Blog]](https://zhuanlan.zhihu.com/p/681554797)
+- PatchCraft: Exploring Texture Patch for Efficient AI-generated Image Detection [[Paper]](https://arxiv.org/pdf/2311.12397) [[Code]](https://github.com/hridayK/Detection-of-AI-generated-images) [[Blog]](https://zhuanlan.zhihu.com/p/685317225)
 
 # Project Recommendation
 - stable-diffusion [[Code]](https://github.com/CompVis/stable-diffusion)
