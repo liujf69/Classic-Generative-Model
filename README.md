@@ -52,6 +52,7 @@
 - [Stable Video Diffusion 源码解读 (Diffusers 版)](https://zhuanlan.zhihu.com/p/701223363)
 - [AIGC-Stable Diffusion之VAE](https://zhuanlan.zhihu.com/p/679772356)
 - [深入浅出完整解析Stable Diffusion XL（SDXL）核心基础知识](https://zhuanlan.zhihu.com/p/643420260)
+- [LoRA微调中是怎么冻结和加入AB矩阵的](https://zhuanlan.zhihu.com/p/688863868)
   
 # Paper Recommendation
 ## News and Highlights
