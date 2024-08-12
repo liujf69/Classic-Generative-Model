@@ -53,6 +53,10 @@
 - [AIGC-Stable Diffusion之VAE](https://zhuanlan.zhihu.com/p/679772356)
 - [深入浅出完整解析Stable Diffusion XL（SDXL）核心基础知识](https://zhuanlan.zhihu.com/p/643420260)
 - [LoRA微调中是怎么冻结和加入AB矩阵的](https://zhuanlan.zhihu.com/p/688863868)
+- [stable diffusion常用的LoRA、Dreambooth、Hypernetworks四大模型差异详解](https://zhuanlan.zhihu.com/p/694921070)
+- [LoRA vs Dreambooth vs Textural Inversion vs Hypernetworks](https://zhuanlan.zhihu.com/p/612992813)
+- [stable diffusion——Dreambooth原理与实践](https://zhuanlan.zhihu.com/p/620577688)
+- [dreambooth原理](https://zhuanlan.zhihu.com/p/659774932)
   
 # Paper Recommendation
 ## News and Highlights
