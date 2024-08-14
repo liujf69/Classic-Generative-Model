@@ -59,7 +59,7 @@
 - [dreambooth原理](https://zhuanlan.zhihu.com/p/659774932)
   
 # Paper Recommendation
-## News and Highlights
+## Highlights
 - Rich Human Feedback for Text-to-Image Generation (CVPR 2024 best paper) [[Paper]](https://arxiv.org/pdf/2312.10240) [[Code]](https://github.com/google-research/google-research/tree/master/richhf_18k)
 - Generative Image Dynamics (CVPR 2024 best paper) [[Paper]](https://generative-dynamics.github.io/static/pdfs/GenerativeImageDynamics.pdf) [[Project]](https://generative-dynamics.github.io/)
 - Scaling Rectified Flow Transformers for High-Resolution Image Synthesis (ICML 2024 best paper) [[Paper]](https://arxiv.org/pdf/2403.03206) [[Project]](https://huggingface.co/stabilityai/stable-diffusion-3-medium)
