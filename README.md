@@ -57,6 +57,7 @@
 - [LoRA vs Dreambooth vs Textural Inversion vs Hypernetworks](https://zhuanlan.zhihu.com/p/612992813)
 - [stable diffusion——Dreambooth原理与实践](https://zhuanlan.zhihu.com/p/620577688)
 - [dreambooth原理](https://zhuanlan.zhihu.com/p/659774932)
+- [Open-Sora全面开源模型参数和所有训练细节](https://mp.weixin.qq.com/s/H52GW8i4z1Dco3Sg--tCGw)
   
 # Paper Recommendation
 ## Highlights
