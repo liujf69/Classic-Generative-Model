@@ -59,6 +59,7 @@
 - [dreambooth原理](https://zhuanlan.zhihu.com/p/659774932)
 - [Open-Sora全面开源模型参数和所有训练细节](https://mp.weixin.qq.com/s/H52GW8i4z1Dco3Sg--tCGw)
 - [论文阅读 | Smartbrush](https://zhuanlan.zhihu.com/p/675525346)
+- [BrushNet —— 插件式图像修复inpainting 模型](https://zhuanlan.zhihu.com/p/695197835)
   
 # Paper Recommendation
 ## Highlights
