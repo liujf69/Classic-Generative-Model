@@ -1,5 +1,9 @@
 # Gan-Demo
-# 简单介绍及学习目的
+```
+python gan_demo.py
+```
+
+# 简单介绍
 1. 使用 Mnist 数据集进行训练。
 ```python
 # download dataset
@@ -52,7 +56,17 @@ discriminator = Dis_Model().to(device)
 generator = Gen_model().to(device)
 ```
 
-3. GAN 训练流程：先训练判别器，再训练生成器。
+3. 定义损失函数和优化器。
+```python
+# init loss function
+loss_fun = nn.BCEWithLogitsLoss()
+
+# init optimizer
+opt_d = torch.optim.Adam(discriminator.parameters(), lr=0.0001)
+opt_g = torch.optim.Adam(generator.parameters(), lr=0.0001)
+```
+
+4. GAN 训练流程：先训练判别器，再训练生成器。
 ```python
 for epoch in range(total_epoch):
     for batch_idx, (batch_imgs, batch_labels) in enumerate(train_loader):
