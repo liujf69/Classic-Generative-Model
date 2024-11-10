@@ -109,5 +109,5 @@ if __name__ == "__main__":
 
         print('epoch: ', epoch, 'loss_g: ', loss_g.item(), "loss_d: ", loss_d.item())
 
-        imgs = generator(32)
+        imgs = generator(32) # 利用生成器生成32个样本
         save_img(imgs, epoch)
