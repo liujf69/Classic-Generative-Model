@@ -108,3 +108,7 @@ for epoch in range(total_epoch):
 imgs = generator(32) # 利用生成器生成32个样本
 save_img(imgs, epoch)
 ```
+训练99个epoch后生成的结果：
+<div align=center>
+<img src ="./result/99.jpg" width="800"/>
+</div>
