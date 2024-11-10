@@ -2,6 +2,8 @@
 ```
 python gan_demo.py
 ```
+# 推荐阅读
+[通俗理解GAN（一）：把GAN给你讲得明明白白](https://zhuanlan.zhihu.com/p/266677860)
 
 # 简单介绍
 1. 使用 Mnist 数据集进行训练。
