@@ -79,6 +79,20 @@ loss = reconst_loss + kl_div
 ```
 
 4. 重构结果
+```python
+# sampling/generating 
+with torch.no_grad():
+    # 从标准正态分布中进行采样
+    z = torch.randn(self.batch_size, z_dim).to(self.device)
+    out = self.model.decode(z).view(-1, 1, 28, 28)
+    # 16*8
+    save_image(out, os.path.join(self.sample_dir, 'sampled-{}.png'.format(epoch + 1)))
+    # Save the reconstructed images
+    out, _, _ = self.model(x)
+    x_concat = torch.cat([x.view(-1, 1, 28, 28), out.view(-1, 1, 28, 28)], dim = 3)
+    # 16*16
+    save_image(x_concat, os.path.join(self.sample_dir, 'reconst-{}.png'.format(epoch+1)))
+```
 ```
 左侧是原始结果，右侧是重构结果
 ```
