@@ -41,10 +41,10 @@ class Gen_model(nn.Module):
 
 # save images
 def save_img(imgs, e):
-    imgs = imgs.reshape(imgs.shape[0],1,28,28)
-    imgs = imgs.clamp(0,1)
+    imgs = imgs.reshape(imgs.shape[0], 1, 28, 28)
+    imgs = imgs.clamp(0, 1)
     imgs = torchvision.utils.make_grid(imgs, nrow=8).detach().cpu().numpy()
-    plt.imshow(imgs.transpose(1,2,0))
+    plt.imshow(imgs.transpose(1, 2, 0))
     plt.savefig(f"./result/{e}.jpg")
 
 if __name__ == "__main__":
