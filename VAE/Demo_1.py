@@ -17,7 +17,7 @@ class process():
         self.z_dim = z_dim
         self.num_epochs = num_epochs
         self.batch_size = batch_size
-        self.model = VAE().to(self.device)
+        self.model = VAE().to(self.device) # 初始化模型
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr = learning_rate)
         self.data_loader = data_loader
         self.sample_dir = sample_dir
@@ -27,8 +27,8 @@ class process():
             # training 
             for i, (x, _) in enumerate(self.data_loader):
                 # Forward pass
-                x = x.to(self.device).view(-1, self.image_size)
-                x_reconst, mu, log_var = self.model(x)
+                x = x.to(self.device).view(-1, self.image_size) # x.shape: [B, 784]
+                x_reconst, mu, log_var = self.model(x) # x_reconst.shape: [B, 784]
                 # Compute reconstruction loss and kl divergence
                 reconst_loss = F.binary_cross_entropy(x_reconst, x, size_average=False)
                 kl_div = -0.5 * torch.sum(1 + log_var - mu.pow(2) - log_var.exp())
@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
-    image_size = 784 # 28*28
+    image_size = 784 # 28*28 Mnist数据大小
     h_dim = 400
     z_dim = 20
     num_epochs = 20
@@ -75,18 +75,19 @@ if __name__ == "__main__":
         os.makedirs(sample_dir)
 
     # FashionMNIST dataset
-    dataset = datasets.FashionMNIST(root='./data', 
-                         train=True, 
-                         transform=transforms.ToTensor(), 
-                         download=True)
+    dataset = datasets.FashionMNIST(root = './data', 
+                         train = True, 
+                         transform = transforms.ToTensor(), 
+                         download = True)
     # Data loader
-    data_loader = torch.utils.data.DataLoader(dataset=dataset,
-                                            batch_size=batch_size, 
-                                            shuffle=True)
+    data_loader = torch.utils.data.DataLoader(dataset = dataset,
+                                            batch_size = batch_size, 
+                                            shuffle = True)
     
     mytest = process(device, image_size, h_dim, z_dim, num_epochs, 
                      batch_size, learning_rate, data_loader, sample_dir)
     
+    # 训练
     mytest.train()
 
     print("All done!")
