@@ -102,3 +102,9 @@ for epoch in range(total_epoch):
         opt_d.zero_grad()
         opt_g.zero_grad()
 ```
+
+5. 训练完毕后，利用生成器生成样本。
+```python
+imgs = generator(32) # 利用生成器生成32个样本
+save_img(imgs, epoch)
+```
