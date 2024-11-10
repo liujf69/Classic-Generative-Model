@@ -59,7 +59,9 @@ data_loader = torch.utils.data.DataLoader(dataset = dataset,
 
 3. 损失函数
 $$Loss = \frac{1}{n}\sum_{i}^n\frac{1}{2}(-1 + \sigma_{i}^2 + \mu_{i}^2 - log \sigma_{i}^2) + \frac{1}{n}\sum_{i}^n||x_{i} - \mu_{i}^\prime||^2$$
+
 $x_{i}$表示Encoder的输入，$\mu_{i}^\prime$表示Decoder的输出，代码实现中一般利用Encoder直接获取$log \sigma_{i}^2$
+
 ```
 利用交叉熵损失计算原始图片和生成图片之间的重构损失
 利用重参数化得到的均值和方差对数计算KL散度
