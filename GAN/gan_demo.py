@@ -40,10 +40,10 @@ class Gen_model(nn.Module):
         return x
 
 # save images
-def save_img(imgs,e):
+def save_img(imgs, e):
     imgs = imgs.reshape(imgs.shape[0],1,28,28)
     imgs = imgs.clamp(0,1)
-    imgs = torchvision.utils.make_grid(imgs,nrow=8).detach().cpu().numpy()
+    imgs = torchvision.utils.make_grid(imgs, nrow=8).detach().cpu().numpy()
     plt.imshow(imgs.transpose(1,2,0))
     plt.savefig(f"./result/{e}.jpg")
 
@@ -81,8 +81,8 @@ if __name__ == "__main__":
             batch_labels = batch_labels.to(device)
 
             batch_ = batch_imgs.shape[0]
-            batch_real_imgs = batch_imgs.reshape(batch_, -1) 
-            batch_fake_imgs = generator(batch_)
+            batch_real_imgs = batch_imgs.reshape(batch_, -1) # 真实图像
+            batch_fake_imgs = generator(batch_) # 生成虚假图像
 
             # train discriminator
             pre1 = discriminator(batch_real_imgs)
@@ -109,5 +109,5 @@ if __name__ == "__main__":
 
         print('epoch: ', epoch, 'loss_g: ', loss_g.item(), "loss_d: ", loss_d.item())
 
-        imgs = generator(32) # 利用生成器生成32个样本
-        save_img(imgs, epoch)
+        imgs = generator(32) # 每个epoch之后，利用生成器生成32个样本
+        save_img(imgs, epoch) # 保存生成的图片
