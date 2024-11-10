@@ -45,7 +45,7 @@ def save_img(imgs, e):
     imgs = imgs.clamp(0, 1)
     imgs = torchvision.utils.make_grid(imgs, nrow=8).detach().cpu().numpy()
     plt.imshow(imgs.transpose(1, 2, 0))
-    plt.savefig(f"./result/{e}.jpg")
+    plt.savefig(f"./result/{e}.jpg", bbox_inches = 'tight', pad_inches = 0.0)
 
 if __name__ == "__main__":
     # download dataset
