@@ -112,6 +112,7 @@
 - zero123 [[Code]](https://github.com/cvlab-columbia/zero123/tree/main)
 - VideoTetris [[Code]](https://github.com/YangLing0818/VideoTetris)
 - Hunyuan3D [[Code]](https://github.com/Tencent/Hunyuan3D-1)
+- LTX-Video [[Code]](https://github.com/Lightricks/LTX-Video)
   
 # Thanks
 Thanks to all the authors of the above blogs and papers!!
