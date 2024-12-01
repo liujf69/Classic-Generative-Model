@@ -9,8 +9,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from utils.configs import get_cfg
 from utils.dataset import get_dataloader
-from model import VQVAE
-from pixelcnn_model import PixelCNNWithEmbedding
+from models.vqvae_model import VQVAE
+from models.pixelcnn_model import PixelCNNWithEmbedding
 
 # train VQ-VAE
 def train_vqvae(model: VQVAE, img_shape = None, device = 'cuda', ckpt_path = './model.pth', batch_size = 64,
