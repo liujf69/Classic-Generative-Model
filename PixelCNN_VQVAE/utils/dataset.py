@@ -1,17 +1,13 @@
 import os
-
-import einops
-import torchvision
 from PIL import Image
+from torchvision import transforms
 from torch.utils.data import DataLoader, Dataset
 from torch.utils.data.distributed import DistributedSampler
-from torchvision import transforms
-
 
 CELEBA_HQ_DIR = './data/celebA/celeba_hq_256'
 
 class CelebADataset(Dataset):
-    def __init__(self, root, img_shape=(64, 64)):
+    def __init__(self, root, img_shape = (64, 64)):
         super().__init__()
         self.root = root
         self.img_shape = img_shape
@@ -30,29 +26,23 @@ class CelebADataset(Dataset):
         ])
         return pipeline(img)
 
-def get_dataloader(type,
-                   batch_size,
-                   img_shape=None,
-                   dist_train=False,
-                   num_workers=4,
-                   **kwargs):
-
+def get_dataloader(type, batch_size, img_shape = None, dist_train = False, num_workers = 4, **kwargs):
     if type == 'CelebAHQ':
         if img_shape is not None:
-            kwargs['img_shape'] = img_shape
+            kwargs['img_shape'] = img_shape # (64, 64)
             dataset = CelebADataset(CELEBA_HQ_DIR, **kwargs)
 
     if dist_train:
         sampler = DistributedSampler(dataset)
         dataloader = DataLoader(dataset,
-                                batch_size=batch_size,
-                                sampler=sampler,
-                                num_workers=num_workers)
+                                batch_size = batch_size,
+                                sampler = sampler,
+                                num_workers = num_workers)
         return dataloader, sampler
     else:
         dataloader = DataLoader(dataset,
-                                batch_size=batch_size,
-                                shuffle=True,
-                                num_workers=num_workers)
+                                batch_size = batch_size,
+                                shuffle = True,
+                                num_workers = num_workers)
         return dataloader
 
