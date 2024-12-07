@@ -113,6 +113,7 @@
 - VideoTetris [[Code]](https://github.com/YangLing0818/VideoTetris)
 - Hunyuan3D [[Code]](https://github.com/Tencent/Hunyuan3D-1)
 - LTX-Video [[Code]](https://github.com/Lightricks/LTX-Video)
+- HunyuanVideo [[Code]](https://github.com/Tencent/HunyuanVideo)
   
 # Thanks
 Thanks to all the authors of the above blogs and papers!!
