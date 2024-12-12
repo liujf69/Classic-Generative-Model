@@ -68,7 +68,8 @@
 - Scaling Rectified Flow Transformers for High-Resolution Image Synthesis (ICML 2024 best paper) [[Paper]](https://arxiv.org/pdf/2403.03206) [[Project]](https://huggingface.co/stabilityai/stable-diffusion-3-medium)
 - VideoPoet: A Large Language Model for Zero-Shot Video Generation (ICML 2024 best paper) [[Paper]](https://arxiv.org/pdf/2312.14125) [[Project]](https://sites.research.google/videopoet/)
 - Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution (ICML 2024 best paper) [[Paper]](https://arxiv.org/pdf/2310.16834)
-- Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction (NeurIPS 2024 best paper) [[Paper]](https://github.com/FoundationVision/VAR) [[Code]](https://github.com/FoundationVision/VAR?tab=readme-ov-file)
+- Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction (NeurIPS 2024 best paper) [[Paper]](https://arxiv.org/abs/2404.02905) [[Code]](https://github.com/FoundationVision/VAR)
+
 ## Diffusion
 - Denoising Diffusion Probabilistic Models [[Paper]](https://arxiv.org/pdf/2006.11239) [[Code]](https://github.com/hojonathanho/diffusion)
 - DENOISING DIFFUSION IMPLICIT MODELS [[Paper]](https://arxiv.org/pdf/2010.02502) [[Code]](https://github.com/ermongroup/ddim)
